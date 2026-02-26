@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POSH KIDS — Fun Audio for Kids & Babies</title>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin:0;
+    font-family: 'Comic Neue', Inter, sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    padding: 24px;
+    background: #fff0f5;
+    border-bottom: 2px solid #ffc0cb;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.header h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 32px; color: #ff69b4; }
+.header p { color: #555; font-size: 14px; margin-top:4px; }
+.container {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-gap: 32px;
+}
+.audio-card {
+    background: #fff8dc;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 2px dashed #ff69b4;
+}
+.audio-card h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; color: #ff1493; }
+.audio-card audio { width: 100%; border-radius: 8px; }
+.audio-card a.download-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: #ffb6c1;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.footer {
+    margin-top:auto;
+    text-align:center;
+    padding:16px;
+    font-size:12px;
+    color:#888;
+}
+</style>
+</head>
+<body><div class="header">
+    <h1>POSH KIDS</h1>
+    <p>Fun Audio for Kids & Babies — Downloadable from Root</p>
+</div><div class="container">
+    <div class="audio-card">
+        <h2>POSH KIDS Jingle</h2>
+        <audio controls>
+            <source src="/poshkids.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <a class="download-btn" href="/poshkids.mp3" download>Download POSH KIDS Jingle</a>
+    </div>
+    <div class="audio-card">
+        <h2>POSH BABIES Jingle</h2>
+        <audio controls>
+            <source src="/poshbabies.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <a class="download-btn" href="/poshbabies.mp3" download>Download POSH BABIES Jingle</a>
+    </div>
+</div><div class="footer">© POSH KIDS 2026 — Fun Audio Collection</div></body>
+</html>
