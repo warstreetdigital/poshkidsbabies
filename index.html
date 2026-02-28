@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,6 +54,7 @@ body {
     text-align: center;
     margin-top: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    cursor: not-allowed;
 }
 .footer {
     margin-top:auto;
@@ -63,17 +65,21 @@ body {
 }
 </style>
 </head>
-<body><div class="header">
+<body>
+<div class="header">
     <h1>KIDDOMI & MUM</h1>
-    <p>Fun Family Audio Presentation — Downloadable</p>
-</div><div class="container">
+    <p>Fun Family Audio Presentation — Download Disabled</p>
+</div>
+<div class="container">
     <div class="audio-card">
         <h2>KIDDOMI Jingle</h2>
         <audio controls>
             <source src="/kiddomi.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <a class="download-btn" href="/kiddomi.mp3" download>Download KIDDOMI Audio</a>
+        <a class="download-btn" href="#" onclick="alert('Not Activated'); return false;">Download KIDDOMI Audio</a>
     </div>
-</div><div class="footer">© KIDDOMI & MUM 2026 — Family Audio Collection</div></body>
+</div>
+<div class="footer">© KIDDOMI & MUM 2026 — Family Audio Collection</div>
+</body>
 </html>
